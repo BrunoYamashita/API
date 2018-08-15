@@ -3,7 +3,7 @@ const bookService = require('../services/book');
 let router = express.Router();
 
 /**
- * Get books by title part
+ * Get books list
  * @returns Array of books objects filtered by title part
  */
 async function get(req, res, next) {
@@ -17,7 +17,7 @@ async function get(req, res, next) {
 };
 
 /**
- * Get books list
+ * Get books by ID
  * @returns Array of books objects
  */
 async function getById(req, res, next) {

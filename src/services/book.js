@@ -1,7 +1,7 @@
 const Book = require('../model/book');
 
 /**
- * Find books by author name part
+ * Find books by ID
  * @param {String} param book title part
  * @returns book object less password field
  */

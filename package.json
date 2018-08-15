@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "common api",
+  "main": "app.js",
+  "bin": {
+    "api": "server.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2-runtime start index.js -i 0 --name 'api'",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "Mongoose",
+    "pm2"
+  ],
+  "author": "Bruno Yamashita",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.8"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.3"
+  }
+}

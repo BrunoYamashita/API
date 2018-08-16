@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2-runtime start index.js -i 0 --name 'api'",
+    "start": "pm2-runtime start app.js -i 0 --name 'api'",
     "dev": "nodemon app.js"
   },
   "keywords": [

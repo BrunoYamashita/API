@@ -6,11 +6,12 @@ services:
     build: .
     environment:
       - NODE_ENV=production
+      - MONGO_HOST=mongodb://mongo:27017/store
       - MONGO_LOGIN=test!user!13
       - MONGO_PWD=test!pass!13
-      - PORT=3000
+      - PORT=8000
     ports:
-      - "3000:3000"
+      - "8000:8000"
     depends_on:
       - mongo
     links:

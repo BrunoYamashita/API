@@ -7,7 +7,7 @@ const Book = require('../model/book');
  */
 exports.findById = async function (param) {
   try {
-    return await Book.find({'_id': param}).select('-_id -__v');
+    return await Book.find({'_id': param}).select('-__v');
 
   } catch (err) {
     throw err;
@@ -20,7 +20,7 @@ exports.findById = async function (param) {
  */
 exports.find = async function () {
   try {
-    return await Book.find().select('-_id -__v');
+    return await Book.find().select('-__v');
 
   } catch (err) {
     throw err;

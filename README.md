@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 NodeJS >= 10.x
 npm >= 6.x
 MongoDB >= 3.6.4
-Docker 3.x
+Docker 18.x
 ```
 
 ### Installing
@@ -27,6 +27,8 @@ yarn install
 ```
 
 Then config Database
+
+* Remember to stop mongo service after installation
 
 On Windows : 
 
@@ -85,7 +87,7 @@ mongo --host 127.0.0.1:27017
 Then run the seed
 
 ```
-npm run seed
+npm run seed -- TODO
 ```
 
 
@@ -109,6 +111,12 @@ To rebuild:
 ```
 docker-compose build 
 
+```
+
+Programmers way
+
+```
+docker-compose up -d --build
 ```
 
 ## License
